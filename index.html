@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat UI</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./fontawesome.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+</head>
+<body>
+    
+    <div class="container mt-2">
+
+        <div class="chat-app-wrapper shadow">
+
+            <div class="chat-app-container">
+
+                <div class="chat-list-wrapper border">
+                    <div class="chat-list">
+                        <ul>
+                            <li>
+                                <a href="#" class="chat-list-item chatListName">
+                                    <div class="d-flex align-items-center">
+                                        <div class="chat-img">
+                                            <img src="https://www.rd.com/wp-content/uploads/2017/09/01-shutterstock_476340928-Irina-Bg.jpg" alt="">
+                                        </div>
+                                        <div class="chat-list-info">
+                                            <div class="chat-name-time">
+                                                <div class="d-flex align-items-center">
+                                                    <h3>Sam Jack</h3>
+                                                    <span class="ml-auto">9:22 pm</span>
+                                                </div>
+                                                <p>This is text description of the message</p>
+                                            </div>
+                                        </div>
+                                        <div class="list-item-options">
+                                            <button>
+                                                t
+                                            </button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="chat-list-item chatListName">
+                                    <div class="d-flex align-items-center">
+                                        <div class="chat-img">
+                                            <img src="https://www.rd.com/wp-content/uploads/2017/09/01-shutterstock_476340928-Irina-Bg.jpg" alt="">
+                                        </div>
+                                        <div class="chat-list-info">
+                                            <div class="chat-name-time">
+                                                <div class="d-flex align-items-center">
+                                                    <h3>Tom Lunas</h3>
+                                                    <span class="ml-auto">9:22 pm</span>
+                                                </div>
+                                                <p>This is text description of the message</p>
+                                            </div>
+                                        </div>
+                                        <div class="list-item-options">
+                                            <button>
+                                                t
+                                            </button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="chat-box-wrapper border">
+                    <div class="chat-box-header">
+                        <button class="backToList">
+                            <img src="./left-arrow.png">
+                        </button>
+                    </div>
+                    <div class="chat-messages-wrapper">
+
+                        <div class="messages-text">
+                            List of messages
+                        </div>
+
+                        <div class="send-message-options">
+                            input
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        $(".chatListName").click(function(){
+            $(".chat-box-wrapper").addClass("right-0");
+            $(".chat-list-wrapper").addClass("translate-20");
+        });
+        $(".backToList").click(function(){
+            $(".chat-box-wrapper").removeClass("right-0");
+            $(".chat-list-wrapper").removeClass("translate-20");
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</body>
+</html>
